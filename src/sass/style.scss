@@ -1,0 +1,24 @@
+@import './base/variables';
+* {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+}
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@import './blocks/promo';
+@import './blocks/header';
+@import './blocks/buttons';
