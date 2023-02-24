@@ -1,0 +1,25 @@
+.feed-form {
+  width: 300px;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  input {
+    width: 100%;
+    height: 54px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: none;
+    padding: 0 20px;
+    color: #4b4b4b;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .feed-form {
+    margin: 0 auto;
+    margin-top: 36px;
+  }
+}
