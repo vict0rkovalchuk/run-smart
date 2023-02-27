@@ -15,11 +15,17 @@
     font-weight: 300;
     font-size: 14px;
   }
+  &_mt26 {
+    margin-top: 26px;
+  }
 }
 
 @media (max-width: 575px) {
   .feed-form {
     margin: 0 auto;
     margin-top: 36px;
+    &_mt26 {
+      margin-top: 26px;
+    }
   }
 }
