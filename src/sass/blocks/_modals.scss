@@ -39,6 +39,14 @@
       font-size: 14px;
       text-align: center;
     }
+    .error {
+      text-align: center;
+      border: 1px solid red;
+    }
+    label.error {
+      border: none;
+      margin: 0;
+    }
   }
 }
 

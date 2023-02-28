@@ -8,6 +8,16 @@
     font-weight: 500;
     font-size: 20px;
   }
+  .error {
+    text-align: center;
+    border: 2px solid red;
+  }
+  label.error {
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    margin: 0;
+  }
 }
 
 @media (max-width: 767px) {
