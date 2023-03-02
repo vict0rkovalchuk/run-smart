@@ -119,4 +119,30 @@ $(document).ready(function () {
     });
     return false;
   });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  $('.pageup').on('click', function (event) {
+    if (this.hash !== '') {
+      event.preventDefault();
+
+      const hash = this.hash;
+
+      $('html, body').animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
 });
