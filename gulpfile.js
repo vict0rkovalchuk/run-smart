@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
+const deploy = require('gulp-gh-pages');
 
 // Static server
 gulp.task('server', function () {
@@ -80,3 +81,7 @@ gulp.task(
     'images'
   )
 );
+
+gulp.task('deploy', function () {
+  return gulp.src('./dist/**/*').pipe(deploy());
+});
