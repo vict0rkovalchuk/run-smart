@@ -81,13 +81,13 @@ $(document).ready(function () {
       },
       messages: {
         name: {
-          required: 'Пожалуйста, введите свое имя',
-          minlength: jQuery.validator.format('Введите {0} символа!')
+          required: "Будь ласка, введіть своє ім'я",
+          minlength: jQuery.validator.format('Введіть {0} символа!')
         },
-        phone: 'Пожалуйста, введите свой номер телефона',
+        phone: 'Будь ласка, введіть свій номер телефону',
         email: {
-          required: 'Пожалуйста, введите свою почту',
-          email: 'Неправильно введен адрес почты'
+          required: 'Будь ласка, введіть свою пошту',
+          email: 'Неправильно введена адреса пошти'
         }
       }
     });
@@ -97,7 +97,7 @@ $(document).ready(function () {
   validateForm('#consultation form');
   validateForm('#order form');
 
-  $('input[name="phone"]').mask('+7(999) 999-99-99');
+  $('input[name="phone"]').mask('+38(999) 999-99-99');
 
   $('form').submit(function (e) {
     e.preventDefault();
